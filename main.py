@@ -1,5 +1,4 @@
 import pygame 
-import sys
 import math
 
 
@@ -33,8 +32,10 @@ class BouncingBall:
         self.y = 300
         self.velocity = [1, 2]
         self.radius = 15
-        self.elasticity = 0.95 # More realistic elasticity
-        self.gravity = 0.1  # Gravity constant
+        # Elasticity is the amount of energy the ball loses when it hits something
+        self.elasticity = 0.9  
+        # constant for gravity 
+        self.gravity = 0.5  
 
     def move(self):
         # Apply gravity
