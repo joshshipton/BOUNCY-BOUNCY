@@ -49,6 +49,8 @@ class BouncingBall:
             normal = [self.x - 300, self.y - 300]
             normal_length = math.sqrt(normal[0] ** 2 + normal[1] ** 2)
             normal = [normal[0] / normal_length, normal[1] / normal_length]
+            print(normal_length)
+            print(normal)
 
             # Reflect the ball's velocity around the normal vector
             dot_product = self.velocity[0] * normal[0] + self.velocity[1] * normal[1]
